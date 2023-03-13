@@ -1,3 +1,26 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBH0cUlZ9W6h8wKVvqre5qV15fJuIlKviY",
+  authDomain: "push-up-challenge-1853b.firebaseapp.com",
+  projectId: "push-up-challenge-1853b",
+  storageBucket: "push-up-challenge-1853b.appspot.com",
+  messagingSenderId: "889451661101",
+  appId: "1:889451661101:web:cd8bbbb5ae9f5c596635a4",
+  measurementId: "G-RBTQK5J768"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 import DeviceDetector from "https://cdn.skypack.dev/device-detector-js@2.2.10";
 // Usage: testSupport({client?: string, os?: string}[])
 // Client and os are regular expressions.
